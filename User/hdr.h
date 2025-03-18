@@ -27,6 +27,7 @@
 #define SET_GEN
 #define SET_ENCODER
 
+
 #if defined(SET_SSD1306) || defined(SET_SSD1306_SPI)
 	#define OLED_128x32
 	#ifdef SET_SSD1306
@@ -61,6 +62,7 @@
 #ifdef SET_ENCODER
 	#include "enc.h"
 #endif
+
 
 
 #define FMCLK	 25000000

@@ -30,7 +30,7 @@ const char *uname = "RISC-V CH32X035";
 uint8_t RxBuff[64] = {0};
 volatile uint8_t evt = noneEvt;
 volatile int8_t ind = 0;
-volatile uint32_t epoch = 1742292059;//1742214977;
+volatile uint32_t epoch = 1742299655;//1742214977;
 //1742062635;//1741965599;//1741857599;//1741692980;//1741608544;//1741292299;//1741268699;
 volatile uint32_t seconda = 0;
 bool set_time = true;
@@ -332,6 +332,18 @@ int calcTime(uint32_t sec, char *st)
     }
 #endif
 //------------------------------------------------------------------------------
+#ifdef SET_VCP
+    void Var_Init(void)
+    {
+        uint16_t i;
+        RingBuffer_Comm.LoadPtr = 0;
+        RingBuffer_Comm.StopFlag = 0;
+        RingBuffer_Comm.DealPtr = 0;
+        RingBuffer_Comm.RemainPack = 0;
+        for(i = 0; i < DEF_Ring_Buffer_Max_Blks; i++) RingBuffer_Comm.PackLen[i] = 0;
+    }
+#endif
+//------------------------------------------------------------------------------
 void prnInfo()
 {
     printf("ChipID:0x%X, SystemClk:%uHz, Seconda:%u%s", DBGMCU_GetCHIPID(), SystemCoreClock, get_sec(0), eol);
@@ -348,10 +360,14 @@ int main(void)
     
     Delay_Ms(1000);
 
+    prnInfo();
+
 #if defined(SET_GEN) || defined(SET_SSD1306_SPI)
     spi_init();
 #endif
+
     Delay_Ms(10);
+
 #ifdef SET_GEN
     AD9833_Init(waveform_select, freq, phase);
     printf("Set frequency to %u Hz and form '%s' type%s", freq, formName(waveform_select), eol);
@@ -385,12 +401,8 @@ int main(void)
 	uint16_t last_count = TIM2->CNT;
     uint32_t tmr = 0;
 #endif
-
-
-    printf("%s", eol);
-    prnInfo();
-    
  
+
     while (1) {
         switch (evt) {
             case errEvt:
@@ -401,7 +413,8 @@ int main(void)
 #if defined(SET_SSD1306) || defined(SET_SSD1306_SPI)        
                 OLED_Clear();
 #endif
-				printf("Restart...%s", eol);
+				printf("Restart...%s%s", eol, eol);
+                Delay_Ms(100);
 		        NVIC_SystemReset();
                 evt = noneEvt;
             break;
@@ -443,7 +456,7 @@ int main(void)
 			case formEvt:
 #ifdef SET_GEN			
 				AD9833_SetWaveform(waveform_select);
-                printf("Set waveform to '%s' type and step to %u Hz%s", formName(waveform_select), allStep_bin[step_idx], eol);
+                printf("Set waveform:'%s', step:%u Hz%s", formName(waveform_select), allStep_bin[step_idx], eol);
 	#if defined(SET_SSD1306) || defined(SET_SSD1306_SPI)
 				OLED_clear_line(LAST_LINE - 1, inv);
 				OLED_text_xy(tmp, OLED_calcx(sprintf(tmp, "%s:%s", allStep[step_idx], formName(waveform_select))), LAST_LINE - 1, inv);
@@ -501,7 +514,7 @@ int main(void)
                     break;
                 }
                 last_tc = tc;
-                tmr = get_sec(10);
+                tmr = get_sec(5);
 #endif             
             break;
         }
