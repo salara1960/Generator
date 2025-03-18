@@ -76,6 +76,7 @@ enum {
 	getEvt,
 	freqEvt,
 	formEvt,
+	stepEvt,
 	errEvt
 };
 

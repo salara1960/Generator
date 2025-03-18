@@ -30,7 +30,7 @@ const char *uname = "RISC-V CH32X035";
 uint8_t RxBuff[64] = {0};
 volatile uint8_t evt = noneEvt;
 volatile int8_t ind = 0;
-volatile uint32_t epoch = 1742214977;
+volatile uint32_t epoch = 1742292059;//1742214977;
 //1742062635;//1741965599;//1741857599;//1741692980;//1741608544;//1741292299;//1741268699;
 volatile uint32_t seconda = 0;
 bool set_time = true;
@@ -71,6 +71,7 @@ bool inv = false;
     int step_idx = 0;
     const char *allStep[] = {"1Hz", "10Hz", "100Hz", "1KHz", "10KHz", "100KHz", "1MHz"};
     const uint32_t allStep_bin[] = {1, 10, 100, 1000, 10000, 100000, 1000000};
+    uint32_t step = 1;
 #endif
 
 
@@ -137,6 +138,17 @@ void USART4_IRQHandler(void)
             } else if ((uk = strstr((char *)RxBuff, "form="))) {
         		waveform_select = atol(uk + 5);
 				evt = formEvt;
+        	} else if ((uk = strstr((char *)RxBuff, "step="))) {
+        		step = atol(uk + 5);
+                evt = errEvt;
+                int i =-1;
+                while (++i < max_step_item) {
+                    if (step == allStep_bin[i]) {
+                        step_idx = i;
+                        evt = formEvt;
+                        break;
+                    }
+                }
         	} else if ((uk = strstr((char *)RxBuff, "dbg="))) {
                 uk += 4;
                 if (strstr(uk, "on")) dbg = true;
@@ -431,7 +443,7 @@ int main(void)
 			case formEvt:
 #ifdef SET_GEN			
 				AD9833_SetWaveform(waveform_select);
-                printf("Set waveform to '%s' type %s", formName(waveform_select), eol);
+                printf("Set waveform to '%s' type and step to %u Hz%s", formName(waveform_select), allStep_bin[step_idx], eol);
 	#if defined(SET_SSD1306) || defined(SET_SSD1306_SPI)
 				OLED_clear_line(LAST_LINE - 1, inv);
 				OLED_text_xy(tmp, OLED_calcx(sprintf(tmp, "%s:%s", allStep[step_idx], formName(waveform_select))), LAST_LINE - 1, inv);
