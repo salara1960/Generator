@@ -26,6 +26,10 @@
 #define SET_SSD1306_SPI
 #define SET_GEN
 #define SET_ENCODER
+#ifndef SET_ENCODER
+	#define SET_KBD
+#endif
+
 
 
 #if defined(SET_SSD1306) || defined(SET_SSD1306_SPI)
@@ -61,6 +65,10 @@
 
 #ifdef SET_ENCODER
 	#include "enc.h"
+#else
+	#ifdef SET_KBD
+		#include "kbd.h"
+	#endif
 #endif
 
 

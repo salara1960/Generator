@@ -8,6 +8,7 @@ C_SRCS += \
 ../User/AD9833.c \
 ../User/ch32x035_it.c \
 ../User/enc.c \
+../User/kbd.c \
 ../User/main.c \
 ../User/ssd1306.c \
 ../User/system_ch32x035.c 
@@ -16,6 +17,7 @@ C_DEPS += \
 ./User/AD9833.d \
 ./User/ch32x035_it.d \
 ./User/enc.d \
+./User/kbd.d \
 ./User/main.d \
 ./User/ssd1306.d \
 ./User/system_ch32x035.d 
@@ -24,6 +26,7 @@ OBJS += \
 ./User/AD9833.o \
 ./User/ch32x035_it.o \
 ./User/enc.o \
+./User/kbd.o \
 ./User/main.o \
 ./User/ssd1306.o \
 ./User/system_ch32x035.o 

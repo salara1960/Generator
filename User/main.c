@@ -30,7 +30,7 @@ const char *uname = "RISC-V CH32X035";
 uint8_t RxBuff[64] = {0};
 volatile uint8_t evt = noneEvt;
 volatile int8_t ind = 0;
-volatile uint32_t epoch = 1742299655;//1742214977;
+volatile uint32_t epoch = 1742473555;//1742299655;//1742214977;
 //1742062635;//1741965599;//1741857599;//1741692980;//1741608544;//1741292299;//1741268699;
 volatile uint32_t seconda = 0;
 bool set_time = true;
@@ -56,7 +56,7 @@ bool inv = false;
 #endif
 
 
-#ifdef SET_ENCODER
+#if defined(SET_ENCODER) || defined(SET_KBD)
     const uint8_t max_menu_item = 3;
     int menu_idx = -1;
     const char *menu[] = {"Freq", "Form", "Step"};
@@ -332,18 +332,6 @@ int calcTime(uint32_t sec, char *st)
     }
 #endif
 //------------------------------------------------------------------------------
-#ifdef SET_VCP
-    void Var_Init(void)
-    {
-        uint16_t i;
-        RingBuffer_Comm.LoadPtr = 0;
-        RingBuffer_Comm.StopFlag = 0;
-        RingBuffer_Comm.DealPtr = 0;
-        RingBuffer_Comm.RemainPack = 0;
-        for(i = 0; i < DEF_Ring_Buffer_Max_Blks; i++) RingBuffer_Comm.PackLen[i] = 0;
-    }
-#endif
-//------------------------------------------------------------------------------
 void prnInfo()
 {
     printf("ChipID:0x%X, SystemClk:%uHz, Seconda:%u%s", DBGMCU_GetCHIPID(), SystemCoreClock, get_sec(0), eol);
@@ -400,6 +388,12 @@ int main(void)
     uint16_t count = TIM2->CNT;
 	uint16_t last_count = TIM2->CNT;
     uint32_t tmr = 0;
+#else
+    #ifdef SET_KBD
+        EXTI_PA012_Init();
+
+        uint32_t tmr = 0;
+    #endif
 #endif
  
 
@@ -450,6 +444,9 @@ int main(void)
 				 	OLED_text_xy(tmp, OLED_calcx(sprintf(tmp, "Hz:%u", freq)), LAST_LINE - 2, inv);
 				}
 	#endif
+    #ifdef SET_KBD
+                Delay_Ms(500);
+    #endif
 #endif
 				evt = noneEvt;
 			break;
@@ -461,22 +458,27 @@ int main(void)
 				OLED_clear_line(LAST_LINE - 1, inv);
 				OLED_text_xy(tmp, OLED_calcx(sprintf(tmp, "%s:%s", allStep[step_idx], formName(waveform_select))), LAST_LINE - 1, inv);
 	#endif
-					
+    #ifdef SET_KBD
+                Delay_Ms(500);
+    #endif
 #endif
 				evt = noneEvt;
 			break;
             case encEvt:
-#ifdef SET_ENCODER
+#if defined(SET_ENCODER) || defined(SET_KBD)
                 menu_idx++;
                 if (menu_idx >= max_menu_item) menu_idx = 0;
                 OLED_clear_line(LAST_LINE, inv);
                 OLED_text_xy(tmp, OLED_calcx(sprintf(tmp, "%s", menu[menu_idx])), LAST_LINE, inv);
-                Delay_Ms(75);
+    #ifdef SET_KBD
+                mkey = false;
+    #endif
+                tmr = get_sec(8);
+                Delay_Ms(50);
 #endif
                 evt = noneEvt;
             break;
             case ienEvt:
-                evt = noneEvt;
 #ifdef SET_ENCODER
                 switch (menu_idx) {
                     case mFreq:
@@ -512,10 +514,54 @@ int main(void)
                         }
                         evt = formEvt;
                     break;
+                    default: evt = noneEvt;
                 }
                 last_tc = tc;
-                tmr = get_sec(5);
+#else
+    #ifdef SET_KBD
+                switch (menu_idx) {
+                    case mFreq:
+                        evt = noneEvt;
+                        if (rkey) {
+                            freq += allStep_bin[step_idx];
+                            if (freq <= FMCLK >> 1) evt = freqEvt;
+                        } else if (lkey) {
+                            if (freq >= allStep_bin[step_idx]) {
+                                freq -= allStep_bin[step_idx];
+                                evt = freqEvt;
+                            }
+                        }
+                    break;
+                    case mForm:
+                        evt = noneEvt;
+                        if (rkey) {
+                            waveform_select++;
+                            if (waveform_select >= max_form_item) waveform_select = 0; 
+                        } else if (lkey) {
+                            if (!waveform_select) waveform_select = max_form_item - 1;
+                            else
+                            waveform_select--;  
+                        }
+                        evt = formEvt;
+                    break;
+                    case mStep:
+                        evt = noneEvt;
+                        if (rkey) {
+                            step_idx++;
+                            if (step_idx >= max_step_item) step_idx = 0; 
+                        } else if (lkey) {
+                            if (!step_idx) step_idx = max_step_item - 1;
+                            else
+                            step_idx--;  
+                        }
+                        evt = formEvt;
+                    break;
+                        default : evt = noneEvt;
+                }
+                lkey = rkey = false;   
+    #endif
 #endif             
+                if (evt != noneEvt) tmr = get_sec(8);
             break;
         }
         //
@@ -527,6 +573,8 @@ int main(void)
             evt = ienEvt;
 	    }
         //
+#endif
+#if defined(SET_ENCODER) || defined(SET_KBD)
         if (tmr) {
             if (check_sec(tmr)) {
                 tmr = 0;
