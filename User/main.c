@@ -318,7 +318,7 @@ int calcTime(uint32_t sec, char *st)
             spi_def.SPI_NSS = SPI_NSS_Soft;
         #endif
         spi_def.SPI_CPOL = SPI_CPOL_High;
-        spi_def.SPI_CPHA = SPI_CPHA_1Edge;
+        spi_def.SPI_CPHA = SPI_CPHA_2Edge; //SPI_CPHA_1Edge;
         spi_def.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
         spi_def.SPI_FirstBit = SPI_FirstBit_MSB;
         spi_def.SPI_CRCPolynomial = 0;

@@ -2133,23 +2133,23 @@ OUTPUT(Generator.elf elf32-littleriscv)
  .debug_ranges  0x00000000000007d0       0xe0 ./Peripheral/src/ch32x035_usart.o
  .debug_ranges  0x00000000000008b0       0x40 ./Debug/debug.o
 
-.debug_line     0x0000000000000000     0xbded
+.debug_line     0x0000000000000000     0xbde3
  .debug_line    0x0000000000000000      0x85a ./User/AD9833.o
  .debug_line    0x000000000000085a      0x367 ./User/ch32x035_it.o
  .debug_line    0x0000000000000bc1      0x819 ./User/enc.o
- .debug_line    0x00000000000013da     0x19fc ./User/main.o
- .debug_line    0x0000000000002dd6      0x9fc ./User/ssd1306.o
- .debug_line    0x00000000000037d2      0x447 ./User/system_ch32x035.o
- .debug_line    0x0000000000003c19      0x11e ./Startup/startup_ch32x035.o
- .debug_line    0x0000000000003d37      0x440 ./Peripheral/src/ch32x035_dbgmcu.o
- .debug_line    0x0000000000004177      0x69a ./Peripheral/src/ch32x035_exti.o
- .debug_line    0x0000000000004811     0x1347 ./Peripheral/src/ch32x035_gpio.o
- .debug_line    0x0000000000005b58      0x4a1 ./Peripheral/src/ch32x035_misc.o
- .debug_line    0x0000000000005ff9      0x88a ./Peripheral/src/ch32x035_rcc.o
- .debug_line    0x0000000000006883      0xb27 ./Peripheral/src/ch32x035_spi.o
- .debug_line    0x00000000000073aa     0x32ae ./Peripheral/src/ch32x035_tim.o
- .debug_line    0x000000000000a658      0xf3a ./Peripheral/src/ch32x035_usart.o
- .debug_line    0x000000000000b592      0x85b ./Debug/debug.o
+ .debug_line    0x00000000000013da     0x19f2 ./User/main.o
+ .debug_line    0x0000000000002dcc      0x9fc ./User/ssd1306.o
+ .debug_line    0x00000000000037c8      0x447 ./User/system_ch32x035.o
+ .debug_line    0x0000000000003c0f      0x11e ./Startup/startup_ch32x035.o
+ .debug_line    0x0000000000003d2d      0x440 ./Peripheral/src/ch32x035_dbgmcu.o
+ .debug_line    0x000000000000416d      0x69a ./Peripheral/src/ch32x035_exti.o
+ .debug_line    0x0000000000004807     0x1347 ./Peripheral/src/ch32x035_gpio.o
+ .debug_line    0x0000000000005b4e      0x4a1 ./Peripheral/src/ch32x035_misc.o
+ .debug_line    0x0000000000005fef      0x88a ./Peripheral/src/ch32x035_rcc.o
+ .debug_line    0x0000000000006879      0xb27 ./Peripheral/src/ch32x035_spi.o
+ .debug_line    0x00000000000073a0     0x32ae ./Peripheral/src/ch32x035_tim.o
+ .debug_line    0x000000000000a64e      0xf3a ./Peripheral/src/ch32x035_usart.o
+ .debug_line    0x000000000000b588      0x85b ./Debug/debug.o
 
 .debug_str      0x0000000000000000     0x2bcf
  .debug_str     0x0000000000000000      0x823 ./User/AD9833.o

@@ -43,17 +43,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  13 .debug_ranges 000008f0  00000000  00000000  0001f498  2**3
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_line   0000bded  00000000  00000000  0001fd88  2**0
+ 14 .debug_line   0000bde3  00000000  00000000  0001fd88  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    00002bcf  00000000  00000000  0002bb75  2**0
+ 15 .debug_str    00002bcf  00000000  00000000  0002bb6b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .comment      00000033  00000000  00000000  0002e744  2**0
+ 16 .comment      00000033  00000000  00000000  0002e73a  2**0
                   CONTENTS, READONLY
- 17 .debug_frame  00002078  00000000  00000000  0002e778  2**2
+ 17 .debug_frame  00002078  00000000  00000000  0002e770  2**2
                   CONTENTS, READONLY, DEBUGGING
- 18 .stab         00000084  00000000  00000000  000307f0  2**2
+ 18 .stab         00000084  00000000  00000000  000307e8  2**2
                   CONTENTS, READONLY, DEBUGGING
- 19 .stabstr      00000117  00000000  00000000  00030874  2**0
+ 19 .stabstr      00000117  00000000  00000000  0003086c  2**0
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 00000000 l    d  .init	00000000 .init
@@ -1353,16 +1353,16 @@ Disassembly of section .text:
      9ba:	04000593          	li	a1,64
      9be:	291000ef          	jal	ra,144e <GPIO_SetBits>
      9c2:	0104c7b7          	lui	a5,0x104c
-     9c6:	ca02                	sw	zero,20(sp)
+     9c6:	c802                	sw	zero,16(sp)
      9c8:	c63e                	sw	a5,12(sp)
-     9ca:	20000793          	li	a5,512
-     9ce:	c802                	sw	zero,16(sp)
-     9d0:	cc02                	sw	zero,24(sp)
-     9d2:	83fc                	sh	a5,22(sp)
-     9d4:	006c                	addi	a1,sp,12
-     9d6:	4789                	li	a5,2
+     9ca:	4789                	li	a5,2
+     9cc:	81fc                	sh	a5,18(sp)
+     9ce:	020007b7          	lui	a5,0x2000
+     9d2:	cc02                	sw	zero,24(sp)
+     9d4:	0785                	addi	a5,a5,1
+     9d6:	006c                	addi	a1,sp,12
      9d8:	40013537          	lui	a0,0x40013
-     9dc:	81fc                	sh	a5,18(sp)
+     9dc:	ca3e                	sw	a5,20(sp)
      9de:	84e4                	sh	s1,24(sp)
      9e0:	00011e23          	sh	zero,28(sp)
      9e4:	37f000ef          	jal	ra,1562 <SPI_Init>
