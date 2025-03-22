@@ -30,7 +30,7 @@ const char *uname = "RISC-V CH32X035";
 uint8_t RxBuff[64] = {0};
 volatile uint8_t evt = noneEvt;
 volatile int8_t ind = 0;
-volatile uint32_t epoch = 1742473555;//1742299655;//1742214977;
+volatile uint32_t epoch = 1742655088;//1742473555;//1742299655;//1742214977;
 //1742062635;//1741965599;//1741857599;//1741692980;//1741608544;//1741292299;//1741268699;
 volatile uint32_t seconda = 0;
 bool set_time = true;
@@ -319,7 +319,7 @@ int calcTime(uint32_t sec, char *st)
         #endif
         spi_def.SPI_CPOL = SPI_CPOL_High;
         spi_def.SPI_CPHA = SPI_CPHA_2Edge; //SPI_CPHA_1Edge;
-        spi_def.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+        spi_def.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;//_8
         spi_def.SPI_FirstBit = SPI_FirstBit_MSB;
         spi_def.SPI_CRCPolynomial = 0;
         SPI_Init(SPI1, &spi_def);

@@ -1282,7 +1282,7 @@ END GROUP
                 0x0000000000000100                . = ALIGN (0x40)
  *fill*         0x00000000000000e0       0x20 
 
-.text           0x0000000000000100     0x3ff8
+.text           0x0000000000000100     0x3ffc
                 0x0000000000000100                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000000000100       0x60 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(save-restore.o)
@@ -1370,476 +1370,476 @@ END GROUP
                 0x00000000000008d0       0x3e ./User/main.o
                 0x00000000000008d0                calcTime
  .text.spi_init
-                0x000000000000090e       0xec ./User/main.o
+                0x000000000000090e       0xee ./User/main.o
                 0x000000000000090e                spi_init
- .text.prnInfo  0x00000000000009fa       0x26 ./User/main.o
-                0x00000000000009fa                prnInfo
+ .text.prnInfo  0x00000000000009fc       0x26 ./User/main.o
+                0x00000000000009fc                prnInfo
  .text.startup.main
-                0x0000000000000a20      0x4ae ./User/main.o
-                0x0000000000000a20                main
+                0x0000000000000a22      0x4ae ./User/main.o
+                0x0000000000000a22                main
  .text.OLED_RESET
-                0x0000000000000ece       0x38 ./User/ssd1306.o
-                0x0000000000000ece                OLED_RESET
+                0x0000000000000ed0       0x38 ./User/ssd1306.o
+                0x0000000000000ed0                OLED_RESET
  .text.I2C_WriteDatas
-                0x0000000000000f06       0x52 ./User/ssd1306.o
-                0x0000000000000f06                I2C_WriteDatas
+                0x0000000000000f08       0x52 ./User/ssd1306.o
+                0x0000000000000f08                I2C_WriteDatas
  .text.OLED_clear_line
-                0x0000000000000f58       0x6a ./User/ssd1306.o
-                0x0000000000000f58                OLED_clear_line
+                0x0000000000000f5a       0x6a ./User/ssd1306.o
+                0x0000000000000f5a                OLED_clear_line
  .text.OLED_Clear
-                0x0000000000000fc2       0x22 ./User/ssd1306.o
-                0x0000000000000fc2                OLED_Clear
+                0x0000000000000fc4       0x22 ./User/ssd1306.o
+                0x0000000000000fc4                OLED_Clear
  .text.OLED_Init
-                0x0000000000000fe4       0x5e ./User/ssd1306.o
-                0x0000000000000fe4                OLED_Init
+                0x0000000000000fe6       0x5e ./User/ssd1306.o
+                0x0000000000000fe6                OLED_Init
  .text.OLED_calcx
-                0x0000000000001042       0x1e ./User/ssd1306.o
-                0x0000000000001042                OLED_calcx
+                0x0000000000001044       0x1e ./User/ssd1306.o
+                0x0000000000001044                OLED_calcx
  .text.OLED_text_xy
-                0x0000000000001060       0xc0 ./User/ssd1306.o
-                0x0000000000001060                OLED_text_xy
+                0x0000000000001062       0xc0 ./User/ssd1306.o
+                0x0000000000001062                OLED_text_xy
  .text.SystemInit
-                0x0000000000001120       0x42 ./User/system_ch32x035.o
-                0x0000000000001120                SystemInit
+                0x0000000000001122       0x42 ./User/system_ch32x035.o
+                0x0000000000001122                SystemInit
  .text.SystemCoreClockUpdate
-                0x0000000000001162       0x3a ./User/system_ch32x035.o
-                0x0000000000001162                SystemCoreClockUpdate
+                0x0000000000001164       0x3a ./User/system_ch32x035.o
+                0x0000000000001164                SystemCoreClockUpdate
  .text.vector_handler
-                0x000000000000119c        0x2 ./Startup/startup_ch32x035.o
-                0x000000000000119c                TIM1_CC_IRQHandler
-                0x000000000000119c                TIM2_UP_IRQHandler
-                0x000000000000119c                USBPD_IRQHandler
-                0x000000000000119c                SysTick_Handler
-                0x000000000000119c                PVD_IRQHandler
-                0x000000000000119c                EXTI25_16_IRQHandler
-                0x000000000000119c                USBFS_IRQHandler
-                0x000000000000119c                Break_Point_Handler
-                0x000000000000119c                TIM2_TRG_COM_IRQHandler
-                0x000000000000119c                TIM2_CC_IRQHandler
-                0x000000000000119c                SPI1_IRQHandler
-                0x000000000000119c                AWU_IRQHandler
-                0x000000000000119c                Ecall_M_Mode_Handler
-                0x000000000000119c                DMA1_Channel4_IRQHandler
-                0x000000000000119c                ADC1_IRQHandler
-                0x000000000000119c                TIM2_BRK_IRQHandler
-                0x000000000000119c                USART3_IRQHandler
-                0x000000000000119c                DMA1_Channel7_IRQHandler
-                0x000000000000119c                USBPDWakeUp_IRQHandler
-                0x000000000000119c                EXTI15_8_IRQHandler
-                0x000000000000119c                I2C1_EV_IRQHandler
-                0x000000000000119c                DMA1_Channel6_IRQHandler
-                0x000000000000119c                TIM3_IRQHandler
-                0x000000000000119c                TIM1_TRG_COM_IRQHandler
-                0x000000000000119c                DMA1_Channel1_IRQHandler
-                0x000000000000119c                DMA1_Channel8_IRQHandler
-                0x000000000000119c                PIOC_IRQHandler
-                0x000000000000119c                DMA1_Channel5_IRQHandler
-                0x000000000000119c                DMA1_Channel3_IRQHandler
-                0x000000000000119c                WWDG_IRQHandler
-                0x000000000000119c                Ecall_U_Mode_Handler
-                0x000000000000119c                SW_Handler
-                0x000000000000119c                TIM1_BRK_IRQHandler
-                0x000000000000119c                OPA_IRQHandler
-                0x000000000000119c                USART2_IRQHandler
-                0x000000000000119c                DMA1_Channel2_IRQHandler
-                0x000000000000119c                FLASH_IRQHandler
-                0x000000000000119c                USBFSWakeUp_IRQHandler
-                0x000000000000119c                USART1_IRQHandler
-                0x000000000000119c                I2C1_ER_IRQHandler
+                0x000000000000119e        0x2 ./Startup/startup_ch32x035.o
+                0x000000000000119e                TIM1_CC_IRQHandler
+                0x000000000000119e                TIM2_UP_IRQHandler
+                0x000000000000119e                USBPD_IRQHandler
+                0x000000000000119e                SysTick_Handler
+                0x000000000000119e                PVD_IRQHandler
+                0x000000000000119e                EXTI25_16_IRQHandler
+                0x000000000000119e                USBFS_IRQHandler
+                0x000000000000119e                Break_Point_Handler
+                0x000000000000119e                TIM2_TRG_COM_IRQHandler
+                0x000000000000119e                TIM2_CC_IRQHandler
+                0x000000000000119e                SPI1_IRQHandler
+                0x000000000000119e                AWU_IRQHandler
+                0x000000000000119e                Ecall_M_Mode_Handler
+                0x000000000000119e                DMA1_Channel4_IRQHandler
+                0x000000000000119e                ADC1_IRQHandler
+                0x000000000000119e                TIM2_BRK_IRQHandler
+                0x000000000000119e                USART3_IRQHandler
+                0x000000000000119e                DMA1_Channel7_IRQHandler
+                0x000000000000119e                USBPDWakeUp_IRQHandler
+                0x000000000000119e                EXTI15_8_IRQHandler
+                0x000000000000119e                I2C1_EV_IRQHandler
+                0x000000000000119e                DMA1_Channel6_IRQHandler
+                0x000000000000119e                TIM3_IRQHandler
+                0x000000000000119e                TIM1_TRG_COM_IRQHandler
+                0x000000000000119e                DMA1_Channel1_IRQHandler
+                0x000000000000119e                DMA1_Channel8_IRQHandler
+                0x000000000000119e                PIOC_IRQHandler
+                0x000000000000119e                DMA1_Channel5_IRQHandler
+                0x000000000000119e                DMA1_Channel3_IRQHandler
+                0x000000000000119e                WWDG_IRQHandler
+                0x000000000000119e                Ecall_U_Mode_Handler
+                0x000000000000119e                SW_Handler
+                0x000000000000119e                TIM1_BRK_IRQHandler
+                0x000000000000119e                OPA_IRQHandler
+                0x000000000000119e                USART2_IRQHandler
+                0x000000000000119e                DMA1_Channel2_IRQHandler
+                0x000000000000119e                FLASH_IRQHandler
+                0x000000000000119e                USBFSWakeUp_IRQHandler
+                0x000000000000119e                USART1_IRQHandler
+                0x000000000000119e                I2C1_ER_IRQHandler
  .text.handle_reset
-                0x000000000000119e       0x86 ./Startup/startup_ch32x035.o
-                0x000000000000119e                handle_reset
+                0x00000000000011a0       0x86 ./Startup/startup_ch32x035.o
+                0x00000000000011a0                handle_reset
  .text.DBGMCU_GetCHIPID
-                0x0000000000001224        0xa ./Peripheral/src/ch32x035_dbgmcu.o
-                0x0000000000001224                DBGMCU_GetCHIPID
+                0x0000000000001226        0xa ./Peripheral/src/ch32x035_dbgmcu.o
+                0x0000000000001226                DBGMCU_GetCHIPID
  .text.EXTI_Init
-                0x000000000000122e       0x6a ./Peripheral/src/ch32x035_exti.o
-                0x000000000000122e                EXTI_Init
+                0x0000000000001230       0x6a ./Peripheral/src/ch32x035_exti.o
+                0x0000000000001230                EXTI_Init
  .text.EXTI_GetITStatus
-                0x0000000000001298       0x1e ./Peripheral/src/ch32x035_exti.o
-                0x0000000000001298                EXTI_GetITStatus
+                0x000000000000129a       0x1e ./Peripheral/src/ch32x035_exti.o
+                0x000000000000129a                EXTI_GetITStatus
  .text.EXTI_ClearITPendingBit
-                0x00000000000012b6        0xa ./Peripheral/src/ch32x035_exti.o
-                0x00000000000012b6                EXTI_ClearITPendingBit
+                0x00000000000012b8        0xa ./Peripheral/src/ch32x035_exti.o
+                0x00000000000012b8                EXTI_ClearITPendingBit
  .text.GPIO_Init
-                0x00000000000012c0      0x18e ./Peripheral/src/ch32x035_gpio.o
-                0x00000000000012c0                GPIO_Init
+                0x00000000000012c2      0x18e ./Peripheral/src/ch32x035_gpio.o
+                0x00000000000012c2                GPIO_Init
  .text.GPIO_SetBits
-                0x000000000000144e        0xe ./Peripheral/src/ch32x035_gpio.o
-                0x000000000000144e                GPIO_SetBits
+                0x0000000000001450        0xe ./Peripheral/src/ch32x035_gpio.o
+                0x0000000000001450                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x000000000000145c        0x4 ./Peripheral/src/ch32x035_gpio.o
-                0x000000000000145c                GPIO_ResetBits
+                0x000000000000145e        0x4 ./Peripheral/src/ch32x035_gpio.o
+                0x000000000000145e                GPIO_ResetBits
  .text.GPIO_EXTILineConfig
-                0x0000000000001460       0x2e ./Peripheral/src/ch32x035_gpio.o
-                0x0000000000001460                GPIO_EXTILineConfig
+                0x0000000000001462       0x2e ./Peripheral/src/ch32x035_gpio.o
+                0x0000000000001462                GPIO_EXTILineConfig
  .text.NVIC_PriorityGroupConfig
-                0x000000000000148e        0x6 ./Peripheral/src/ch32x035_misc.o
-                0x000000000000148e                NVIC_PriorityGroupConfig
+                0x0000000000001490        0x6 ./Peripheral/src/ch32x035_misc.o
+                0x0000000000001490                NVIC_PriorityGroupConfig
  .text.NVIC_Init
-                0x0000000000001494       0x54 ./Peripheral/src/ch32x035_misc.o
-                0x0000000000001494                NVIC_Init
+                0x0000000000001496       0x54 ./Peripheral/src/ch32x035_misc.o
+                0x0000000000001496                NVIC_Init
  .text.RCC_GetClocksFreq
-                0x00000000000014e8       0x3e ./Peripheral/src/ch32x035_rcc.o
-                0x00000000000014e8                RCC_GetClocksFreq
+                0x00000000000014ea       0x3e ./Peripheral/src/ch32x035_rcc.o
+                0x00000000000014ea                RCC_GetClocksFreq
  .text.RCC_APB2PeriphClockCmd
-                0x0000000000001526       0x1e ./Peripheral/src/ch32x035_rcc.o
-                0x0000000000001526                RCC_APB2PeriphClockCmd
+                0x0000000000001528       0x1e ./Peripheral/src/ch32x035_rcc.o
+                0x0000000000001528                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x0000000000001544       0x1e ./Peripheral/src/ch32x035_rcc.o
-                0x0000000000001544                RCC_APB1PeriphClockCmd
+                0x0000000000001546       0x1e ./Peripheral/src/ch32x035_rcc.o
+                0x0000000000001546                RCC_APB1PeriphClockCmd
  .text.SPI_Init
-                0x0000000000001562       0x32 ./Peripheral/src/ch32x035_spi.o
-                0x0000000000001562                SPI_Init
+                0x0000000000001564       0x32 ./Peripheral/src/ch32x035_spi.o
+                0x0000000000001564                SPI_Init
  .text.SPI_I2S_SendData
-                0x0000000000001594       0x14 ./Peripheral/src/ch32x035_spi.o
-                0x0000000000001594                SPI_I2S_SendData
+                0x0000000000001596       0x14 ./Peripheral/src/ch32x035_spi.o
+                0x0000000000001596                SPI_I2S_SendData
  .text.TIM_TimeBaseInit
-                0x00000000000015a8       0x56 ./Peripheral/src/ch32x035_tim.o
-                0x00000000000015a8                TIM_TimeBaseInit
+                0x00000000000015aa       0x56 ./Peripheral/src/ch32x035_tim.o
+                0x00000000000015aa                TIM_TimeBaseInit
  .text.TIM_TimeBaseStructInit
-                0x00000000000015fe       0x16 ./Peripheral/src/ch32x035_tim.o
-                0x00000000000015fe                TIM_TimeBaseStructInit
+                0x0000000000001600       0x16 ./Peripheral/src/ch32x035_tim.o
+                0x0000000000001600                TIM_TimeBaseStructInit
  .text.TIM_GetITStatus
-                0x0000000000001614       0x18 ./Peripheral/src/ch32x035_tim.o
-                0x0000000000001614                TIM_GetITStatus
+                0x0000000000001616       0x18 ./Peripheral/src/ch32x035_tim.o
+                0x0000000000001616                TIM_GetITStatus
  .text.TIM_ClearITPendingBit
-                0x000000000000162c        0xc ./Peripheral/src/ch32x035_tim.o
-                0x000000000000162c                TIM_ClearITPendingBit
+                0x000000000000162e        0xc ./Peripheral/src/ch32x035_tim.o
+                0x000000000000162e                TIM_ClearITPendingBit
  .text.USART_Init
-                0x0000000000001638       0x8e ./Peripheral/src/ch32x035_usart.o
-                0x0000000000001638                USART_Init
+                0x000000000000163a       0x8e ./Peripheral/src/ch32x035_usart.o
+                0x000000000000163a                USART_Init
  .text.USART_Cmd
-                0x00000000000016c6       0x16 ./Peripheral/src/ch32x035_usart.o
-                0x00000000000016c6                USART_Cmd
+                0x00000000000016c8       0x16 ./Peripheral/src/ch32x035_usart.o
+                0x00000000000016c8                USART_Cmd
  .text.USART_ITConfig
-                0x00000000000016dc       0x36 ./Peripheral/src/ch32x035_usart.o
-                0x00000000000016dc                USART_ITConfig
+                0x00000000000016de       0x36 ./Peripheral/src/ch32x035_usart.o
+                0x00000000000016de                USART_ITConfig
  .text.USART_SendData
-                0x0000000000001712        0x8 ./Peripheral/src/ch32x035_usart.o
-                0x0000000000001712                USART_SendData
+                0x0000000000001714        0x8 ./Peripheral/src/ch32x035_usart.o
+                0x0000000000001714                USART_SendData
  .text.USART_ReceiveData
-                0x000000000000171a        0x8 ./Peripheral/src/ch32x035_usart.o
-                0x000000000000171a                USART_ReceiveData
+                0x000000000000171c        0x8 ./Peripheral/src/ch32x035_usart.o
+                0x000000000000171c                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x0000000000001722        0xa ./Peripheral/src/ch32x035_usart.o
-                0x0000000000001722                USART_GetFlagStatus
+                0x0000000000001724        0xa ./Peripheral/src/ch32x035_usart.o
+                0x0000000000001724                USART_GetFlagStatus
  .text.Delay_Init
-                0x000000000000172c       0x26 ./Debug/debug.o
-                0x000000000000172c                Delay_Init
+                0x000000000000172e       0x26 ./Debug/debug.o
+                0x000000000000172e                Delay_Init
  .text.Delay_Ms
-                0x0000000000001752       0x36 ./Debug/debug.o
-                0x0000000000001752                Delay_Ms
- .text._write   0x0000000000001788       0x3a ./Debug/debug.o
-                0x0000000000001788                _write
- .text._sbrk    0x00000000000017c2       0x26 ./Debug/debug.o
-                0x00000000000017c2                _sbrk
+                0x0000000000001754       0x36 ./Debug/debug.o
+                0x0000000000001754                Delay_Ms
+ .text._write   0x000000000000178a       0x3a ./Debug/debug.o
+                0x000000000000178a                _write
+ .text._sbrk    0x00000000000017c4       0x26 ./Debug/debug.o
+                0x00000000000017c4                _sbrk
  .text.__divsf3
-                0x00000000000017e8      0x2ae /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
-                0x00000000000017e8                __divsf3
+                0x00000000000017ea      0x2ae /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
+                0x00000000000017ea                __divsf3
  .text.__mulsf3
-                0x0000000000001a96      0x290 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
-                0x0000000000001a96                __mulsf3
+                0x0000000000001a98      0x290 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
+                0x0000000000001a98                __mulsf3
  .text.__fixunssfsi
-                0x0000000000001d26       0x56 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(fixunssfsi.o)
-                0x0000000000001d26                __fixunssfsi
+                0x0000000000001d28       0x56 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(fixunssfsi.o)
+                0x0000000000001d28                __fixunssfsi
  .text.__floatunsisf
-                0x0000000000001d7c       0xce /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(floatunsisf.o)
-                0x0000000000001d7c                __floatunsisf
+                0x0000000000001d7e       0xce /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(floatunsisf.o)
+                0x0000000000001d7e                __floatunsisf
  .text.__clzsi2
-                0x0000000000001e4a       0x6e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clzsi2.o)
-                0x0000000000001e4a                __clzsi2
- .text.atol     0x0000000000001eb8        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-atol.o)
-                0x0000000000001eb8                atol
- .text.calloc   0x0000000000001ebe        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-calloc.o)
-                0x0000000000001ebe                calloc
- .text.free     0x0000000000001eca        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-malloc.o)
-                0x0000000000001eca                free
+                0x0000000000001e4c       0x6e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clzsi2.o)
+                0x0000000000001e4c                __clzsi2
+ .text.atol     0x0000000000001eba        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-atol.o)
+                0x0000000000001eba                atol
+ .text.calloc   0x0000000000001ec0        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-calloc.o)
+                0x0000000000001ec0                calloc
+ .text.free     0x0000000000001ecc        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-malloc.o)
+                0x0000000000001ecc                free
  .text._calloc_r
-                0x0000000000001ed4       0x26 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-callocr.o)
-                0x0000000000001ed4                _calloc_r
- .text._free_r  0x0000000000001efa       0xa4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-freer.o)
-                0x0000000000001efa                _free_r
+                0x0000000000001ed6       0x26 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-callocr.o)
+                0x0000000000001ed6                _calloc_r
+ .text._free_r  0x0000000000001efc       0xa4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-freer.o)
+                0x0000000000001efc                _free_r
  .text._malloc_r
-                0x0000000000001f9e       0xce /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-mallocr.o)
-                0x0000000000001f9e                _malloc_r
- .text.printf   0x000000000000206c       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-printf.o)
-                0x000000000000206c                printf
-                0x000000000000206c                iprintf
- .text._sbrk_r  0x00000000000020ac       0x2a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sbrkr.o)
-                0x00000000000020ac                _sbrk_r
- .text.sprintf  0x00000000000020d6       0x44 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sprintf.o)
-                0x00000000000020d6                sprintf
-                0x00000000000020d6                siprintf
- .text.strlen   0x000000000000211a       0x12 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strlen.o)
-                0x000000000000211a                strlen
- .text.strstr   0x000000000000212c       0x34 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strstr.o)
-                0x000000000000212c                strstr
+                0x0000000000001fa0       0xce /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000000000001fa0                _malloc_r
+ .text.printf   0x000000000000206e       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-printf.o)
+                0x000000000000206e                printf
+                0x000000000000206e                iprintf
+ .text._sbrk_r  0x00000000000020ae       0x2a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sbrkr.o)
+                0x00000000000020ae                _sbrk_r
+ .text.sprintf  0x00000000000020d8       0x44 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sprintf.o)
+                0x00000000000020d8                sprintf
+                0x00000000000020d8                siprintf
+ .text.strlen   0x000000000000211c       0x12 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strlen.o)
+                0x000000000000211c                strlen
+ .text.strstr   0x000000000000212e       0x34 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strstr.o)
+                0x000000000000212e                strstr
  .text._strtol_l.isra.0
-                0x0000000000002160      0x138 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
- .text.strtol   0x0000000000002298       0x1c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
-                0x0000000000002298                strtol
- .text.std      0x00000000000022b4       0x66 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x0000000000002162      0x138 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
+ .text.strtol   0x000000000000229a       0x1c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
+                0x000000000000229a                strtol
+ .text.std      0x00000000000022b6       0x66 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000000000231a        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x000000000000231a                _cleanup_r
+                0x000000000000231c        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x000000000000231c                _cleanup_r
  .text.__sfmoreglue
-                0x0000000000002324       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x0000000000002324                __sfmoreglue
- .text.__sinit  0x000000000000236c       0x66 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x000000000000236c                __sinit
- .text.__sfp    0x00000000000023d2       0x9c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x00000000000023d2                __sfp
+                0x0000000000002326       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x0000000000002326                __sfmoreglue
+ .text.__sinit  0x000000000000236e       0x66 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x000000000000236e                __sinit
+ .text.__sfp    0x00000000000023d4       0x9c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x00000000000023d4                __sfp
  .text._fwalk_reent
-                0x000000000000246e       0x6a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fwalk.o)
-                0x000000000000246e                _fwalk_reent
+                0x0000000000002470       0x6a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fwalk.o)
+                0x0000000000002470                _fwalk_reent
  .text.__locale_ctype_ptr_l
-                0x00000000000024d8        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
-                0x00000000000024d8                __locale_ctype_ptr_l
+                0x00000000000024da        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
+                0x00000000000024da                __locale_ctype_ptr_l
  .text.__ascii_mbtowc
-                0x00000000000024de       0x32 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mbtowc_r.o)
-                0x00000000000024de                __ascii_mbtowc
+                0x00000000000024e0       0x32 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mbtowc_r.o)
+                0x00000000000024e0                __ascii_mbtowc
  .text.__malloc_lock
-                0x0000000000002510        0x2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mlock.o)
-                0x0000000000002510                __malloc_lock
- .text.__malloc_unlock
                 0x0000000000002512        0x2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mlock.o)
-                0x0000000000002512                __malloc_unlock
+                0x0000000000002512                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000000002514        0x2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mlock.o)
+                0x0000000000002514                __malloc_unlock
  .text.__ssputs_r
-                0x0000000000002514       0xe4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0000000000002514                __ssputs_r
+                0x0000000000002516       0xe4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000002516                __ssputs_r
  .text._svfprintf_r
-                0x00000000000025f8      0x268 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
-                0x00000000000025f8                _svfprintf_r
-                0x00000000000025f8                _svfiprintf_r
+                0x00000000000025fa      0x268 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000000025fa                _svfprintf_r
+                0x00000000000025fa                _svfiprintf_r
  .text.__sfputc_r
-                0x0000000000002860       0x26 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000002862       0x26 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000000000002886       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000000002886                __sfputs_r
+                0x0000000000002888       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000002888                __sfputs_r
  .text._vfprintf_r
-                0x00000000000028c6      0x28a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
-                0x00000000000028c6                _vfiprintf_r
-                0x00000000000028c6                _vfprintf_r
+                0x00000000000028c8      0x28a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000000028c8                _vfiprintf_r
+                0x00000000000028c8                _vfprintf_r
  .text._printf_common
-                0x0000000000002b50      0x10c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000000002b50                _printf_common
+                0x0000000000002b52      0x10c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000002b52                _printf_common
  .text._printf_i
-                0x0000000000002c5c      0x2a2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000000002c5c                _printf_i
- .text.__sread  0x0000000000002efe       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
-                0x0000000000002efe                __sread
+                0x0000000000002c5e      0x2a2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000002c5e                _printf_i
+ .text.__sread  0x0000000000002f00       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
+                0x0000000000002f00                __sread
  .text.__swrite
-                0x0000000000002f2a       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
-                0x0000000000002f2a                __swrite
- .text.__sseek  0x0000000000002f72       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
-                0x0000000000002f72                __sseek
+                0x0000000000002f2c       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
+                0x0000000000002f2c                __swrite
+ .text.__sseek  0x0000000000002f74       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
+                0x0000000000002f74                __sseek
  .text.__sclose
-                0x0000000000002fa2        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
-                0x0000000000002fa2                __sclose
+                0x0000000000002fa4        0x6 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
+                0x0000000000002fa4                __sclose
  .text.__swbuf_r
-                0x0000000000002fa8       0xbe /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wbuf.o)
-                0x0000000000002fa8                __swbuf_r
+                0x0000000000002faa       0xbe /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wbuf.o)
+                0x0000000000002faa                __swbuf_r
  .text.__ascii_wctomb
-                0x0000000000003066       0x1e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wctomb_r.o)
-                0x0000000000003066                __ascii_wctomb
+                0x0000000000003068       0x1e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wctomb_r.o)
+                0x0000000000003068                __ascii_wctomb
  .text._write_r
-                0x0000000000003084       0x2e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-writer.o)
-                0x0000000000003084                _write_r
+                0x0000000000003086       0x2e /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-writer.o)
+                0x0000000000003086                _write_r
  .text.__swsetup_r
-                0x00000000000030b2      0x100 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wsetup.o)
-                0x00000000000030b2                __swsetup_r
+                0x00000000000030b4      0x100 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wsetup.o)
+                0x00000000000030b4                __swsetup_r
  .text._close_r
-                0x00000000000031b2       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-closer.o)
-                0x00000000000031b2                _close_r
+                0x00000000000031b4       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-closer.o)
+                0x00000000000031b4                _close_r
  .text.__sflush_r
-                0x00000000000031da      0x132 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
-                0x00000000000031da                __sflush_r
+                0x00000000000031dc      0x132 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
+                0x00000000000031dc                __sflush_r
  .text._fflush_r
-                0x000000000000330c       0x68 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
-                0x000000000000330c                _fflush_r
+                0x000000000000330e       0x68 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
+                0x000000000000330e                _fflush_r
  .text._lseek_r
-                0x0000000000003374       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-lseekr.o)
-                0x0000000000003374                _lseek_r
+                0x0000000000003376       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-lseekr.o)
+                0x0000000000003376                _lseek_r
  .text.__swhatbuf_r
-                0x00000000000033a0       0x56 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
-                0x00000000000033a0                __swhatbuf_r
+                0x00000000000033a2       0x56 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
+                0x00000000000033a2                __swhatbuf_r
  .text.__smakebuf_r
-                0x00000000000033f6       0x90 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
-                0x00000000000033f6                __smakebuf_r
- .text.memchr   0x0000000000003486       0x18 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memchr.o)
-                0x0000000000003486                memchr
- .text.memcpy   0x000000000000349e       0xb2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memcpy.o)
-                0x000000000000349e                memcpy
- .text.memmove  0x0000000000003550       0x46 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memmove.o)
-                0x0000000000003550                memmove
+                0x00000000000033f8       0x90 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
+                0x00000000000033f8                __smakebuf_r
+ .text.memchr   0x0000000000003488       0x18 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memchr.o)
+                0x0000000000003488                memchr
+ .text.memcpy   0x00000000000034a0       0xb2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memcpy.o)
+                0x00000000000034a0                memcpy
+ .text.memmove  0x0000000000003552       0x46 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memmove.o)
+                0x0000000000003552                memmove
  .text._realloc_r
-                0x0000000000003596       0x58 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-reallocr.o)
-                0x0000000000003596                _realloc_r
- .text._read_r  0x00000000000035ee       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-readr.o)
-                0x00000000000035ee                _read_r
+                0x0000000000003598       0x58 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-reallocr.o)
+                0x0000000000003598                _realloc_r
+ .text._read_r  0x00000000000035f0       0x2c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-readr.o)
+                0x00000000000035f0                _read_r
  .text._fstat_r
-                0x000000000000361a       0x2a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fstatr.o)
-                0x000000000000361a                _fstat_r
+                0x000000000000361c       0x2a /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fstatr.o)
+                0x000000000000361c                _fstat_r
  .text._isatty_r
-                0x0000000000003644       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-isattyr.o)
-                0x0000000000003644                _isatty_r
+                0x0000000000003646       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-isattyr.o)
+                0x0000000000003646                _isatty_r
  .text._malloc_usable_size_r
-                0x000000000000366c       0x14 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-msizer.o)
-                0x000000000000366c                _malloc_usable_size_r
- .text._close   0x0000000000003680        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(close.o)
-                0x0000000000003680                _close
- .text._fstat   0x000000000000368c        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(fstat.o)
-                0x000000000000368c                _fstat
- .text._isatty  0x0000000000003698        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(isatty.o)
-                0x0000000000003698                _isatty
- .text._lseek   0x00000000000036a4        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(lseek.o)
-                0x00000000000036a4                _lseek
- .text._read    0x00000000000036b0        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(read.o)
-                0x00000000000036b0                _read
+                0x000000000000366e       0x14 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-msizer.o)
+                0x000000000000366e                _malloc_usable_size_r
+ .text._close   0x0000000000003682        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(close.o)
+                0x0000000000003682                _close
+ .text._fstat   0x000000000000368e        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(fstat.o)
+                0x000000000000368e                _fstat
+ .text._isatty  0x000000000000369a        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(isatty.o)
+                0x000000000000369a                _isatty
+ .text._lseek   0x00000000000036a6        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(lseek.o)
+                0x00000000000036a6                _lseek
+ .text._read    0x00000000000036b2        0xc /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(read.o)
+                0x00000000000036b2                _read
  *(.rodata)
  *(.rodata*)
- *fill*         0x00000000000036bc        0x0 
+ *fill*         0x00000000000036be        0x2 
  .rodata.AD9833_SetFrequency.cst4
-                0x00000000000036bc        0x8 ./User/AD9833.o
+                0x00000000000036c0        0x8 ./User/AD9833.o
  .rodata.AD9833_SetFrequency.str1.4
-                0x00000000000036c4       0x38 ./User/AD9833.o
+                0x00000000000036c8       0x38 ./User/AD9833.o
  .rodata.AD9833_SetWaveform.str1.4
-                0x00000000000036fc       0x24 ./User/AD9833.o
+                0x0000000000003700       0x24 ./User/AD9833.o
  .rodata.AD9833_WriteCfgReg.str1.4
-                0x0000000000003720       0x17 ./User/AD9833.o
- *fill*         0x0000000000003737        0x1 
+                0x0000000000003724       0x17 ./User/AD9833.o
+ *fill*         0x000000000000373b        0x1 
  .rodata.CSWTCH.19
-                0x0000000000003738        0xc ./User/AD9833.o
+                0x000000000000373c        0xc ./User/AD9833.o
  .rodata.__func__.5508
-                0x0000000000003744       0x13 ./User/AD9833.o
- *fill*         0x0000000000003757        0x1 
+                0x0000000000003748       0x13 ./User/AD9833.o
+ *fill*         0x000000000000375b        0x1 
  .rodata.__func__.5512
-                0x0000000000003758       0x13 ./User/AD9833.o
- *fill*         0x000000000000376b        0x1 
+                0x000000000000375c       0x13 ./User/AD9833.o
+ *fill*         0x000000000000376f        0x1 
  .rodata.__func__.5523
-                0x000000000000376c       0x14 ./User/AD9833.o
+                0x0000000000003770       0x14 ./User/AD9833.o
  .rodata.formName.str1.4
-                0x0000000000003780        0x4 ./User/AD9833.o
+                0x0000000000003784        0x4 ./User/AD9833.o
  .rodata.str1.4
-                0x0000000000003784       0x19 ./User/AD9833.o
- *fill*         0x000000000000379d        0x3 
- .rodata.main   0x00000000000037a0       0x24 ./User/main.o
+                0x0000000000003788       0x19 ./User/AD9833.o
+ *fill*         0x00000000000037a1        0x3 
+ .rodata.main   0x00000000000037a4       0x24 ./User/main.o
  .rodata.USART4_IRQHandler.str1.4
-                0x00000000000037c4       0x38 ./User/main.o
+                0x00000000000037c8       0x38 ./User/main.o
  .rodata.allStep_bin
-                0x00000000000037fc       0x1c ./User/main.o
-                0x00000000000037fc                allStep_bin
+                0x0000000000003800       0x1c ./User/main.o
+                0x0000000000003800                allStep_bin
  .rodata.calcTime.str1.4
-                0x0000000000003818       0x13 ./User/main.o
- *fill*         0x000000000000382b        0x1 
+                0x000000000000381c       0x13 ./User/main.o
+ *fill*         0x000000000000382f        0x1 
  .rodata.main.str1.4
-                0x000000000000382c       0xd0 ./User/main.o
+                0x0000000000003830       0xd0 ./User/main.o
                                          0xd4 (size before relaxing)
  .rodata.prnInfo.str1.4
-                0x00000000000038fc       0x2a ./User/main.o
- *fill*         0x0000000000003926        0x2 
+                0x0000000000003900       0x2a ./User/main.o
+ *fill*         0x000000000000392a        0x2 
  .rodata.str1.4
-                0x0000000000003928       0x5e ./User/main.o
+                0x000000000000392c       0x5e ./User/main.o
                                          0x7a (size before relaxing)
- *fill*         0x0000000000003986        0x2 
+ *fill*         0x000000000000398a        0x2 
  .rodata.font8x8
-                0x0000000000003988      0x400 ./User/ssd1306.o
-                0x0000000000003988                font8x8
+                0x000000000000398c      0x400 ./User/ssd1306.o
+                0x000000000000398c                font8x8
  .rodata.__divsf3
-                0x0000000000003d88       0x80 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
+                0x0000000000003d8c       0x80 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
  .rodata.__mulsf3
-                0x0000000000003e08       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
+                0x0000000000003e0c       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
  .rodata.__clz_tab
-                0x0000000000003e48      0x100 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clz.o)
-                0x0000000000003e48                __clz_tab
+                0x0000000000003e4c      0x100 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clz.o)
+                0x0000000000003e4c                __clz_tab
  .rodata.__sf_fake_stderr
-                0x0000000000003f48       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x0000000000003f48                __sf_fake_stderr
+                0x0000000000003f4c       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x0000000000003f4c                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000000003f68       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x0000000000003f68                __sf_fake_stdin
+                0x0000000000003f6c       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x0000000000003f6c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000000003f88       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
-                0x0000000000003f88                __sf_fake_stdout
+                0x0000000000003f8c       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+                0x0000000000003f8c                __sf_fake_stdout
  .rodata._setlocale_r.str1.4
-                0x0000000000003fa8        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
+                0x0000000000003fac        0xa /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
                                           0xd (size before relaxing)
- *fill*         0x0000000000003fb2        0x2 
- .rodata.str1.4
-                0x0000000000003fb4        0x2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
  *fill*         0x0000000000003fb6        0x2 
+ .rodata.str1.4
+                0x0000000000003fb8        0x2 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
+ *fill*         0x0000000000003fba        0x2 
  .rodata._svfprintf_r.str1.4
-                0x0000000000003fb8       0x13 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000003fbc       0x13 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
  .rodata._vfprintf_r.str1.4
-                0x0000000000003fcb       0x13 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
- *fill*         0x0000000000003fcb        0x1 
+                0x0000000000003fcf       0x13 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
+ *fill*         0x0000000000003fcf        0x1 
  .rodata._printf_i.str1.4
-                0x0000000000003fcc       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000003fd0       0x28 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
                                          0x25 (size before relaxing)
  .rodata._ctype_
-                0x0000000000003ff4      0x101 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-ctype_.o)
-                0x0000000000003ff4                _ctype_
+                0x0000000000003ff8      0x101 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-ctype_.o)
+                0x0000000000003ff8                _ctype_
  *(.gnu.linkonce.t.*)
-                0x00000000000040f8                . = ALIGN (0x4)
- *fill*         0x00000000000040f5        0x3 
+                0x00000000000040fc                . = ALIGN (0x4)
+ *fill*         0x00000000000040f9        0x3 
 
-.rela.dyn       0x00000000000040f8        0x0
- .rela.init     0x00000000000040f8        0x0 ./User/AD9833.o
- .rela.vector   0x00000000000040f8        0x0 ./User/AD9833.o
+.rela.dyn       0x00000000000040fc        0x0
+ .rela.init     0x00000000000040fc        0x0 ./User/AD9833.o
+ .rela.vector   0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text.handle_reset
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._sbrk
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.sdata.curbrk.4333
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._sbrk_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._svfprintf_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._vfprintf_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._write_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._close_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._lseek_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._read_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._fstat_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._isatty_r
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._close
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._fstat
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._isatty
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._lseek
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
  .rela.text._read
-                0x00000000000040f8        0x0 ./User/AD9833.o
+                0x00000000000040fc        0x0 ./User/AD9833.o
 
-.fini           0x00000000000040f8        0x0
+.fini           0x00000000000040fc        0x0
  *(SORT_NONE(.fini))
-                0x00000000000040f8                . = ALIGN (0x4)
+                0x00000000000040fc                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (_eitcm = .)
 
-.preinit_array  0x00000000000040f8        0x0
+.preinit_array  0x00000000000040fc        0x0
                 [!provide]                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000000040f8        0x0
+.init_array     0x00000000000040fc        0x0
                 [!provide]                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
                 [!provide]                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x00000000000040f8        0x0
+.fini_array     0x00000000000040fc        0x0
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -1859,15 +1859,15 @@ END GROUP
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.dalign         0x0000000020000000        0x0 load address 0x00000000000040f8
+.dalign         0x0000000020000000        0x0 load address 0x00000000000040fc
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                PROVIDE (_data_vma = .)
 
-.dlalign        0x00000000000040f8        0x0
-                0x00000000000040f8                . = ALIGN (0x4)
-                0x00000000000040f8                PROVIDE (_data_lma = .)
+.dlalign        0x00000000000040fc        0x0
+                0x00000000000040fc                . = ALIGN (0x4)
+                0x00000000000040fc                PROVIDE (_data_lma = .)
 
-.data           0x0000000020000000      0x260 load address 0x00000000000040f8
+.data           0x0000000020000000      0x260 load address 0x00000000000040fc
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
  .data.allStep  0x0000000020000000       0x1c ./User/main.o
@@ -1955,7 +1955,7 @@ END GROUP
                 0x0000000020000260                . = ALIGN (0x4)
                 0x0000000020000260                PROVIDE (_edata = .)
 
-.bss            0x0000000020000260       0xb8 load address 0x0000000000004358
+.bss            0x0000000020000260       0xb8 load address 0x000000000000435c
                 0x0000000020000260                . = ALIGN (0x4)
                 0x0000000020000260                PROVIDE (_sbss = .)
  *(.sbss*)
@@ -2030,23 +2030,23 @@ END GROUP
                 0x0000000020005000                PROVIDE (_eusrstack = .)
 OUTPUT(Generator.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000    0x11acc
+.debug_info     0x0000000000000000    0x11acb
  .debug_info    0x0000000000000000     0x10bd ./User/AD9833.o
  .debug_info    0x00000000000010bd      0xbc0 ./User/ch32x035_it.o
  .debug_info    0x0000000000001c7d     0x149a ./User/enc.o
- .debug_info    0x0000000000003117     0x2992 ./User/main.o
- .debug_info    0x0000000000005aa9     0x11f0 ./User/ssd1306.o
- .debug_info    0x0000000000006c99      0xb56 ./User/system_ch32x035.o
- .debug_info    0x00000000000077ef       0x22 ./Startup/startup_ch32x035.o
- .debug_info    0x0000000000007811      0xa94 ./Peripheral/src/ch32x035_dbgmcu.o
- .debug_info    0x00000000000082a5      0xc05 ./Peripheral/src/ch32x035_exti.o
- .debug_info    0x0000000000008eaa     0x11c9 ./Peripheral/src/ch32x035_gpio.o
- .debug_info    0x000000000000a073      0xe36 ./Peripheral/src/ch32x035_misc.o
- .debug_info    0x000000000000aea9      0xd8f ./Peripheral/src/ch32x035_rcc.o
- .debug_info    0x000000000000bc38     0x1072 ./Peripheral/src/ch32x035_spi.o
- .debug_info    0x000000000000ccaa     0x2b87 ./Peripheral/src/ch32x035_tim.o
- .debug_info    0x000000000000f831     0x1333 ./Peripheral/src/ch32x035_usart.o
- .debug_info    0x0000000000010b64      0xf68 ./Debug/debug.o
+ .debug_info    0x0000000000003117     0x2991 ./User/main.o
+ .debug_info    0x0000000000005aa8     0x11f0 ./User/ssd1306.o
+ .debug_info    0x0000000000006c98      0xb56 ./User/system_ch32x035.o
+ .debug_info    0x00000000000077ee       0x22 ./Startup/startup_ch32x035.o
+ .debug_info    0x0000000000007810      0xa94 ./Peripheral/src/ch32x035_dbgmcu.o
+ .debug_info    0x00000000000082a4      0xc05 ./Peripheral/src/ch32x035_exti.o
+ .debug_info    0x0000000000008ea9     0x11c9 ./Peripheral/src/ch32x035_gpio.o
+ .debug_info    0x000000000000a072      0xe36 ./Peripheral/src/ch32x035_misc.o
+ .debug_info    0x000000000000aea8      0xd8f ./Peripheral/src/ch32x035_rcc.o
+ .debug_info    0x000000000000bc37     0x1072 ./Peripheral/src/ch32x035_spi.o
+ .debug_info    0x000000000000cca9     0x2b87 ./Peripheral/src/ch32x035_tim.o
+ .debug_info    0x000000000000f830     0x1333 ./Peripheral/src/ch32x035_usart.o
+ .debug_info    0x0000000000010b63      0xf68 ./Debug/debug.o
 
 .debug_abbrev   0x0000000000000000     0x302c
  .debug_abbrev  0x0000000000000000      0x3a9 ./User/AD9833.o
@@ -2133,23 +2133,23 @@ OUTPUT(Generator.elf elf32-littleriscv)
  .debug_ranges  0x00000000000007d0       0xe0 ./Peripheral/src/ch32x035_usart.o
  .debug_ranges  0x00000000000008b0       0x40 ./Debug/debug.o
 
-.debug_line     0x0000000000000000     0xbde3
+.debug_line     0x0000000000000000     0xbdeb
  .debug_line    0x0000000000000000      0x85a ./User/AD9833.o
  .debug_line    0x000000000000085a      0x367 ./User/ch32x035_it.o
  .debug_line    0x0000000000000bc1      0x819 ./User/enc.o
- .debug_line    0x00000000000013da     0x19f2 ./User/main.o
- .debug_line    0x0000000000002dcc      0x9fc ./User/ssd1306.o
- .debug_line    0x00000000000037c8      0x447 ./User/system_ch32x035.o
- .debug_line    0x0000000000003c0f      0x11e ./Startup/startup_ch32x035.o
- .debug_line    0x0000000000003d2d      0x440 ./Peripheral/src/ch32x035_dbgmcu.o
- .debug_line    0x000000000000416d      0x69a ./Peripheral/src/ch32x035_exti.o
- .debug_line    0x0000000000004807     0x1347 ./Peripheral/src/ch32x035_gpio.o
- .debug_line    0x0000000000005b4e      0x4a1 ./Peripheral/src/ch32x035_misc.o
- .debug_line    0x0000000000005fef      0x88a ./Peripheral/src/ch32x035_rcc.o
- .debug_line    0x0000000000006879      0xb27 ./Peripheral/src/ch32x035_spi.o
- .debug_line    0x00000000000073a0     0x32ae ./Peripheral/src/ch32x035_tim.o
- .debug_line    0x000000000000a64e      0xf3a ./Peripheral/src/ch32x035_usart.o
- .debug_line    0x000000000000b588      0x85b ./Debug/debug.o
+ .debug_line    0x00000000000013da     0x19fa ./User/main.o
+ .debug_line    0x0000000000002dd4      0x9fc ./User/ssd1306.o
+ .debug_line    0x00000000000037d0      0x447 ./User/system_ch32x035.o
+ .debug_line    0x0000000000003c17      0x11e ./Startup/startup_ch32x035.o
+ .debug_line    0x0000000000003d35      0x440 ./Peripheral/src/ch32x035_dbgmcu.o
+ .debug_line    0x0000000000004175      0x69a ./Peripheral/src/ch32x035_exti.o
+ .debug_line    0x000000000000480f     0x1347 ./Peripheral/src/ch32x035_gpio.o
+ .debug_line    0x0000000000005b56      0x4a1 ./Peripheral/src/ch32x035_misc.o
+ .debug_line    0x0000000000005ff7      0x88a ./Peripheral/src/ch32x035_rcc.o
+ .debug_line    0x0000000000006881      0xb27 ./Peripheral/src/ch32x035_spi.o
+ .debug_line    0x00000000000073a8     0x32ae ./Peripheral/src/ch32x035_tim.o
+ .debug_line    0x000000000000a656      0xf3a ./Peripheral/src/ch32x035_usart.o
+ .debug_line    0x000000000000b590      0x85b ./Debug/debug.o
 
 .debug_str      0x0000000000000000     0x2bcf
  .debug_str     0x0000000000000000      0x823 ./User/AD9833.o
@@ -2203,70 +2203,70 @@ OUTPUT(Generator.elf elf32-littleriscv)
  .comment       0x0000000000000033       0x34 ./Peripheral/src/ch32x035_usart.o
  .comment       0x0000000000000033       0x34 ./Debug/debug.o
 
-.debug_frame    0x0000000000000000     0x2078
+.debug_frame    0x0000000000000000     0x2074
  .debug_frame   0x0000000000000000      0x100 ./User/AD9833.o
  .debug_frame   0x0000000000000100       0x30 ./User/ch32x035_it.o
  .debug_frame   0x0000000000000130       0x78 ./User/enc.o
- .debug_frame   0x00000000000001a8      0x1c0 ./User/main.o
- .debug_frame   0x0000000000000368      0x134 ./User/ssd1306.o
- .debug_frame   0x000000000000049c       0x30 ./User/system_ch32x035.o
- .debug_frame   0x00000000000004cc       0x70 ./Peripheral/src/ch32x035_dbgmcu.o
- .debug_frame   0x000000000000053c       0x90 ./Peripheral/src/ch32x035_exti.o
- .debug_frame   0x00000000000005cc      0x140 ./Peripheral/src/ch32x035_gpio.o
- .debug_frame   0x000000000000070c       0x30 ./Peripheral/src/ch32x035_misc.o
- .debug_frame   0x000000000000073c       0xfc ./Peripheral/src/ch32x035_rcc.o
- .debug_frame   0x0000000000000838      0x15c ./Peripheral/src/ch32x035_spi.o
- .debug_frame   0x0000000000000994      0x654 ./Peripheral/src/ch32x035_tim.o
- .debug_frame   0x0000000000000fe8      0x1e4 ./Peripheral/src/ch32x035_usart.o
- .debug_frame   0x00000000000011cc       0xc0 ./Debug/debug.o
- .debug_frame   0x000000000000128c       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
- .debug_frame   0x00000000000012dc       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
- .debug_frame   0x000000000000132c       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(fixunssfsi.o)
- .debug_frame   0x000000000000134c       0x44 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(floatunsisf.o)
- .debug_frame   0x0000000000001390       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clzsi2.o)
- .debug_frame   0x00000000000013b0       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-atol.o)
- .debug_frame   0x00000000000013e0       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-calloc.o)
- .debug_frame   0x0000000000001400       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x0000000000001430       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-callocr.o)
- .debug_frame   0x0000000000001460       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000000000014a0       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000000000014e0       0x54 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-printf.o)
- .debug_frame   0x0000000000001534       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000001564       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00000000000015ac       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strlen.o)
- .debug_frame   0x00000000000015cc       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strstr.o)
- .debug_frame   0x00000000000015ec       0x70 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
- .debug_frame   0x000000000000165c      0x148 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00000000000017a4       0x88 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x000000000000182c       0x78 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
- .debug_frame   0x00000000000018a4       0x38 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00000000000018dc       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x000000000000190c       0xe0 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00000000000019ec       0xd0 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x0000000000001abc       0x8c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000001b48       0x70 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-reent.o)
- .debug_frame   0x0000000000001bb8       0xa4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000000000001c5c       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x0000000000001cac       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wctomb_r.o)
- .debug_frame   0x0000000000001cdc       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-writer.o)
- .debug_frame   0x0000000000001d0c       0x3c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000000000001d48       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-closer.o)
- .debug_frame   0x0000000000001d78       0x7c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000000000001df4       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000000000001e24       0x64 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000001e88       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memchr.o)
- .debug_frame   0x0000000000001ea8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memcpy.o)
- .debug_frame   0x0000000000001ec8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x0000000000001ee8       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x0000000000001f28       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-readr.o)
- .debug_frame   0x0000000000001f58       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x0000000000001f88       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-isattyr.o)
- .debug_frame   0x0000000000001fb8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x0000000000001fd8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(close.o)
- .debug_frame   0x0000000000001ff8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(fstat.o)
- .debug_frame   0x0000000000002018       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(isatty.o)
- .debug_frame   0x0000000000002038       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(lseek.o)
- .debug_frame   0x0000000000002058       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(read.o)
+ .debug_frame   0x00000000000001a8      0x1bc ./User/main.o
+ .debug_frame   0x0000000000000364      0x134 ./User/ssd1306.o
+ .debug_frame   0x0000000000000498       0x30 ./User/system_ch32x035.o
+ .debug_frame   0x00000000000004c8       0x70 ./Peripheral/src/ch32x035_dbgmcu.o
+ .debug_frame   0x0000000000000538       0x90 ./Peripheral/src/ch32x035_exti.o
+ .debug_frame   0x00000000000005c8      0x140 ./Peripheral/src/ch32x035_gpio.o
+ .debug_frame   0x0000000000000708       0x30 ./Peripheral/src/ch32x035_misc.o
+ .debug_frame   0x0000000000000738       0xfc ./Peripheral/src/ch32x035_rcc.o
+ .debug_frame   0x0000000000000834      0x15c ./Peripheral/src/ch32x035_spi.o
+ .debug_frame   0x0000000000000990      0x654 ./Peripheral/src/ch32x035_tim.o
+ .debug_frame   0x0000000000000fe4      0x1e4 ./Peripheral/src/ch32x035_usart.o
+ .debug_frame   0x00000000000011c8       0xc0 ./Debug/debug.o
+ .debug_frame   0x0000000000001288       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(divsf3.o)
+ .debug_frame   0x00000000000012d8       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(mulsf3.o)
+ .debug_frame   0x0000000000001328       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_frame   0x0000000000001348       0x44 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(floatunsisf.o)
+ .debug_frame   0x000000000000138c       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32/libgcc.a(_clzsi2.o)
+ .debug_frame   0x00000000000013ac       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-atol.o)
+ .debug_frame   0x00000000000013dc       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-calloc.o)
+ .debug_frame   0x00000000000013fc       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x000000000000142c       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-callocr.o)
+ .debug_frame   0x000000000000145c       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000000000000149c       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000014dc       0x54 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-printf.o)
+ .debug_frame   0x0000000000001530       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000001560       0x48 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00000000000015a8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strlen.o)
+ .debug_frame   0x00000000000015c8       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strstr.o)
+ .debug_frame   0x00000000000015e8       0x70 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-strtol.o)
+ .debug_frame   0x0000000000001658      0x148 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000000000017a0       0x88 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000001828       0x78 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-locale.o)
+ .debug_frame   0x00000000000018a0       0x38 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00000000000018d8       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000001908       0xe0 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x00000000000019e8       0xd0 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000000000001ab8       0x8c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000001b44       0x70 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x0000000000001bb4       0xa4 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000001c58       0x50 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000001ca8       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wctomb_r.o)
+ .debug_frame   0x0000000000001cd8       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000001d08       0x3c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000001d44       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x0000000000001d74       0x7c /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000001df0       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000001e20       0x64 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000001e84       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x0000000000001ea4       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000001ec4       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000001ee4       0x40 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000001f24       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000000000001f54       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000001f84       0x30 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000001fb4       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000001fd4       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(close.o)
+ .debug_frame   0x0000000000001ff4       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(fstat.o)
+ .debug_frame   0x0000000000002014       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(isatty.o)
+ .debug_frame   0x0000000000002034       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(lseek.o)
+ .debug_frame   0x0000000000002054       0x20 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(read.o)
 
 .stab           0x0000000000000000       0x84
  .stab          0x0000000000000000       0x24 /home/alarm/Downloads/RISC-V/MRS2/MRS-linux-x64/resources/app/resources/linux/components/WCH/Toolchain/RISC-V Embedded GCC/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32/libnosys.a(close.o)
